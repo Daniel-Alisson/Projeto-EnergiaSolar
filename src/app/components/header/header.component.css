@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px 100px 20px 30px;
+  padding: 10px 10px 10px 10px;
   border-bottom: 2px solid var(--cor-header-borda);
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
 }
@@ -18,12 +18,14 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin: 10px;
 }
 
 .empresa span {
   font-size: 25px;
   font-weight: 400;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .empresa img {
@@ -34,21 +36,31 @@ header {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  margin: 10px 20px;
 }
 
 .cabecalho-links ul li {
-  margin-right: 50px;
-}
-
-.cabecalho-links ul li:last-child {
-  margin-right: 0;
+  margin: 5px 20px;
 }
 
 .cabecalho-links ul li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-decoration: none;
   color: black;
   cursor: pointer;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 1038px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .cabecalho-links ul {
+    justify-content: space-around;
+  }
 }
