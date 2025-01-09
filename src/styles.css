@@ -2,16 +2,20 @@
 
 :root {
   /* CORES DA HEADER*/
-  --cor-header-fundo: #ffd900;
+  --cor-header-background: #ffd900;
   --cor-header-borda: #f5d000;
   --cor-header-link-portal: #ffffff;
   --cor-header-borda-link-portal: #ebebeb;
   /* CORES DO TOPICO SERVICOS NO HOME*/
-  --cor-home-background: #123132;
-  --cor-home-servicos: #ffd900;
+  --cor-home-background: #ffffff;
+  --cor-home-servicos-background: #ffea70;
+  --cor-home-servicos-borda: #ffea70;
+  --cor-home-link-background: #ffffff;
+  --cor-home-link-borda: #eae4d7;
   /* CORES DO FOOTER*/
-  --cor-footer-background: #ffd900;
-  --cor-footer-borda: #f5d000;
+  --cor-footer-background: #f8f6f2;
+  --cor-footer-borda: #eae4d7;
+
   /* CORES DE FONTES*/
   --cor-font: #1d1d1d;
 }
@@ -22,4 +26,12 @@
   box-sizing: border-box;
   font-family: "Rubik", serif;
   color: var(--cor-font);
+}
+
+body {
+  background-color: var(--cor-home-background);
+}
+
+html {
+  scroll-behavior: smooth;
 }

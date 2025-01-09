@@ -1,7 +1,7 @@
 header {
-  background-color: var(--cor-header-fundo);
+  position: relative;
+  background-color: var(--cor-header-background);
   color: var(--cor-font);
-  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -87,6 +87,7 @@ header {
 .cabecalho-links ul li a:hover {
   color: var(--cor-font);
   font-weight: 400;
+  transition: opacity 0.3 ease, font-weight 0.3 ease;
 }
 
 .cabecalho-links ul li:last-child a {

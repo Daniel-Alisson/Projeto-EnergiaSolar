@@ -1,13 +1,10 @@
-main {
-  margin-top: 110px;
-}
-
 .banner {
   width: 100%;
   height: 500px;
   background: url(../../../../public/assets/images/banner-energia-solar.jpg)
     no-repeat center;
   background-size: cover;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.4);
 }
 
 .banner div {
@@ -29,24 +26,26 @@ main {
 .banner a {
   display: inline-block;
   color: var(--cor-font);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 200;
   text-decoration: none;
-  padding: 2px;
-  background-color: red;
-  border: 2px solid red;
+  padding: 5px;
+  background-color: var(--cor-home-link-background);
+  border: 2px solid var(--cor-home-link-borda);
   border-radius: 15px;
   transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .banner a:hover {
-  color: white;
   transform: scale(1.1);
+  font-weight: 500;
   box-shadow: 2px 2px 8px black;
 }
 
 h2 {
-  margin: 10rem auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,12 +53,19 @@ h2 {
   flex-wrap: wrap;
   color: var(--cor-font);
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+hr {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  border-width: 2px;
 }
 
 .servicos {
   max-width: 1500px;
-  margin: 5rem auto;
+  margin: 7rem auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,45 +82,56 @@ h2 {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  width: 250px;
-  height: 320px;
+  width: 260px;
+  height: 360px;
   gap: 1rem;
   text-align: justify;
   word-wrap: break-word;
-  background-color: var(--cor-home-servicos);
-  border: 2px solid var(--cor-header-borda);
+  background-color: var(--cor-home-servicos-background);
+  border: 2px solid var(--cor-home-servicos-borda);
   border-radius: 10px;
   padding: 15px;
   overflow: auto;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.6);
+  transition: 0.25s ease-in-out;
 }
 
 .service h3 {
+  width: 100%;
   font-size: 18px;
   font-weight: 500;
   height: 45px;
   word-wrap: break-word;
   text-align: center;
+  border-bottom: 2px solid #707070;
 }
 
 .service p {
   font-size: 15px;
+  line-height: 1.2;
   flex-grow: 1;
 }
 
 .service a {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
   text-decoration: none;
   color: var(--cor-font);
-  background-color: red;
-  padding: 3px;
-  border: 1px solid red;
+  background-color: var(--cor-home-link-background);
+  padding: 6px;
+  border: 1px solid var(--cor-home-link-borda);
   border-radius: 15px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
 }
 
 .service a:hover {
-  color: white;
   transform: scale(1.1);
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.service:hover {
+  transform: scale(1.05);
 }

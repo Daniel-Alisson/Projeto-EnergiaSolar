@@ -56,8 +56,19 @@
 .rodape-redes-sociais a {
   margin-left: 5px;
   margin-right: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
 .rodape-redes-sociais a img {
   width: 25px;
+  transition: 0.2s ease-in-out;
+}
+
+.rodape-links ul li a:hover {
+  transform: scale(1.1);
+  font-weight: 500;
+}
+
+.rodape-redes-sociais a img:hover {
+  transform: scale(1.2);
 }
