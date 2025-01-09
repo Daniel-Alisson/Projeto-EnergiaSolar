@@ -6,11 +6,14 @@
   --cor-header-borda: #f5d000;
   --cor-header-link-portal: #ffffff;
   --cor-header-borda-link-portal: #ebebeb;
-  /* CORES DE FONTES*/
-  --cor-font: #1d1d1d;
   /* CORES DO TOPICO SERVICOS NO HOME*/
   --cor-home-background: #123132;
   --cor-home-servicos: #ffd900;
+  /* CORES DO FOOTER*/
+  --cor-footer-background: #ffd900;
+  --cor-footer-borda: #f5d000;
+  /* CORES DE FONTES*/
+  --cor-font: #1d1d1d;
 }
 
 * {
