@@ -44,3 +44,77 @@ main {
   transform: scale(1.1);
   box-shadow: 2px 2px 8px black;
 }
+
+h2 {
+  margin: 10rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  color: var(--cor-font);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.servicos {
+  max-width: 1500px;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: visible;
+}
+
+.service {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 320px;
+  gap: 1rem;
+  text-align: justify;
+  word-wrap: break-word;
+  background-color: var(--cor-home-servicos);
+  border: 2px solid var(--cor-header-borda);
+  border-radius: 10px;
+  padding: 15px;
+  overflow: auto;
+}
+
+.service h3 {
+  font-size: 18px;
+  font-weight: 500;
+  height: 45px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.service p {
+  font-size: 15px;
+  flex-grow: 1;
+}
+
+.service a {
+  font-size: 13px;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--cor-font);
+  background-color: red;
+  padding: 3px;
+  border: 1px solid red;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.service a:hover {
+  color: white;
+  transform: scale(1.1);
+}

@@ -8,6 +8,9 @@
   --cor-header-borda-link-portal: #ebebeb;
   /* CORES DE FONTES*/
   --cor-font: #1d1d1d;
+  /* CORES DO TOPICO SERVICOS NO HOME*/
+  --cor-home-background: #123132;
+  --cor-home-servicos: #ffd900;
 }
 
 * {
